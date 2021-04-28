@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Base exercise page</title>
+
+    <meta name="description" content="A simple exercise template." />
+    <!-- styles -->
+    <style></style>
+  </head>
+  <body>
+    <h1>GOOGLE HERSTORY</h1>
+    <p id="paragraph-1">
+    </p>
+    <p id="paragraph-2">
+    </p>
+    <p id="paragraph-3">
+    </p>
+    <p id="paragraph-4">
+    </p>
+    <p id="paragraph-5">
+    </p>
+    <p id="paragraph-6">
+    </p>
+    <button id="button-1">
+      CLICK 2 DELETE HERSTORY
+    </button>
+    <!-- script -->
+    <script>
+      const lines = "Feminist Porn, Female friendly porn, Girl on girl porn, Porn that doesn’t make me feel gross, Can you get pregnant from pre-cum, Do i have a uti, Do i have thrush, Do i have chlamydia, Do i have depression, Do i have IBS, How to clean vibrator properly, Can my vibrator give me thrush, Can my vibrator hold chlamydia on it, How much should i be getting paid, Queer tv shows, How much is in an 8-ball, How to lose stomach fat, Sports bras, Fernwood Gyms near me, How to know your bi, Female tattoo artists near me, Is squirting real or myth, How to tell if someone is an ally , How to tell if your gay, Origins of the word dyke, Miley cyrus naked photoshoots, Kristen Stewart shaved head, SUK workwear, Lesbian bars near me, Can I be gay and still find simon baker hot, Tarot readers near me, Psychologists near me, Blue is the warmest colour 20 minute sex scene".split(",");
+      const linesTwo = "Feminist Porn, Female friendly porn, Girl on girl porn, Porn that doesn’t make me feel gross, Can you get pregnant from pre-cum, Do i have a uti, Do i have thrush, Do i have chlamydia, Do i have depression, Do i have IBS, How to clean vibrator properly, Can my vibrator give me thrush, Can my vibrator hold chlamydia on it, How much should i be getting paid, Queer tv shows, How much is in an 8-ball, How to lose stomach fat, Sports bras, Fernwood Gyms near me, How to know your bi, Female tattoo artists near me, Is squirting real or myth, How to tell if someone is an ally , How to tell if your gay, Origins of the word dyke, Miley cyrus naked photoshoots, Kristen Stewart shaved head, SUK workwear, Lesbian bars near me, Can I be gay and still find simon baker hot, Tarot readers near me, Psychologists near me, Blue is the warmest colour 20 minute sex scene".split(",");
+      const linesThree = "Feminist Porn, Female friendly porn, Girl on girl porn, Porn that doesn’t make me feel gross, Can you get pregnant from pre-cum, Do i have a uti, Do i have thrush, Do i have chlamydia, Do i have depression, Do i have IBS, How to clean vibrator properly, Can my vibrator give me thrush, Can my vibrator hold chlamydia on it, How much should i be getting paid, Queer tv shows, How much is in an 8-ball, How to lose stomach fat, Sports bras, Fernwood Gyms near me, How to know your bi, Female tattoo artists near me, Is squirting real or myth, How to tell if someone is an ally , How to tell if your gay, Origins of the word dyke, Miley cyrus naked photoshoots, Kristen Stewart shaved head, SUK workwear, Lesbian bars near me, Can I be gay and still find simon baker hot, Tarot readers near me, Psychologists near me, Blue is the warmest colour 20 minute sex scene".split(",");
+      const button = document.getElementById("button-1");
+
+      function getRandomFromList(list) {
+        return list[Math.floor(Math.random() * list.length)];
+      }
+      function changeText() {
+        const paragraph = document.getElementById("paragraph-1");
+        const paragraphTwo= document.getElementById("paragraph-2");
+        const paragraphThree= document.getElementById("paragraph-3");
+        const paragraphFour= document.getElementById("paragraph-4");
+        const paragraphFive= document.getElementById("paragraph-5");
+        const paragraphSix= document.getElementById("paragraph-6");
+        paragraph.innerText = getRandomFromList(lines);
+        paragraphTwo.innerText = getRandomFromList(linesTwo);
+        paragraphThree.innerText = getRandomFromList(linesThree);
+        paragraphFour.innerText = getRandomFromList(linesThree);
+        paragraphFive.innerText = getRandomFromList(linesThree);
+        paragraphSix.innerText = getRandomFromList(linesThree);
+      }
+      button.addEventListener("click", changeText);
+    </script>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
+  <!-- custom font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+ <!-- styles -->
+    <style>
+      body {
+        font-family: "Fira Code", serif;
+        margin: 2em;
+        background-color: #E593EB;
+        color: #EBDC48;
+        font-size: 1.2em;
+      }
+      h1 {
+        color: #EBDC48;
+      }
+ </style>
